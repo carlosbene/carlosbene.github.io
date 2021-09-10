@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1">
 		
 		<title>SPACE Game Studio</title>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/1.2.0/css/uikit.gradient.min.css" rel="stylesheet" type="text/css">
@@ -12,9 +12,22 @@
 			ul{
 				margin:4px; }
 			.mobile{opacity: 0;}
+			.plus15{
+				margin-left: 15px; }
+			.title{
+				margin-bottom:0px; }
+			.subtitle{
+				display: block;
+				margin-bottom:20px; }
 			@media (max-width: 750px){
 				.sticky{display: none;}
 				.mobile{display: block;opacity: 1;} }
+			@media (min-width: 1000px){
+				.sticky{
+					width:260px; } }
+			@media (min-width: 1220px){
+				.sticky{
+					width:320px; } }
 		</style>
 	</head>
 
@@ -27,9 +40,9 @@
 			<div class="uk-grid">
 
 
-				<div class="uk-width-medium-1-4 uk-sticky sticky"  uk-sticky="bottom: #viewport; media: 200000" style="position: fixed; top: 15px; width: 250px">				
-					<h1 class="nav-header">SPACE Game Studio</h1>
-					<a class="nav-header" href="https://twitter.com/search?q=%23madeintoulouse&src=typed_query&f=live">#MadeInToulouse</a>
+				<div class="uk-width-medium-1-4 uk-sticky sticky"  uk-sticky="bottom: #viewport; media: 200000" style="position: fixed; top: 15px;">				
+					<h1 class="title plus15 nav-header">SPACE <br>Game Studio</h1>
+					<a class="subtitle plus15 nav-header" href="https://twitter.com/search?q=%23madeintoulouse&src=typed_query&f=live">#MadeInToulouse</a>
 					<ul class="uk-nav uk-nav-side">
 						<li><a href="#SPACEGameStudio">SPACE Game Studio</a></li>
 						<li><a href="#MOTHERSHIP">MOTHERSHIP</a></li>
